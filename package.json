@@ -9,15 +9,19 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "compodoc": "compodoc -p tsconfig.app.json",
+    "compodoc:serve": "compodoc -p tsconfig.app.json -s -r 8081"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
+    "@angular/cdk": "^12.2.13",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
     "@angular/forms": "~12.2.0",
+    "@angular/material": "^12.2.13",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
@@ -29,6 +33,7 @@
     "@angular-devkit/build-angular": "~12.2.0",
     "@angular/cli": "~12.2.0",
     "@angular/compiler-cli": "~12.2.0",
+    "@compodoc/compodoc": "^1.1.16",
     "@types/jest": "^27.0.3",
     "@types/node": "^12.11.1",
     "jest": "^27.4.3",
